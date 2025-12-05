@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Static imports copied for landing page
+    "public/site/**",
+    "source/**",
   ]),
 ]);
 
