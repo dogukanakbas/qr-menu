@@ -34,7 +34,7 @@ export function ImageUploader({
           onChange={(event) => setValue(event.target.value)}
           className="w-full rounded-xl border border-stone-200 px-3 py-2 text-sm focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-100"
         />
-        <UploadButton<OurFileRouter>
+        <UploadButton<OurFileRouter, "menuImage">
           endpoint="menuImage"
           appearance={{
             button:
