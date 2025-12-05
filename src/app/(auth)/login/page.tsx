@@ -7,7 +7,7 @@ import { authOptions } from "@/lib/auth-options";
 
 export default async function LoginPage() {
   const session = await getServerSession(authOptions);
-  if (session?.user?.role === "admin") {
+  if (session && "user" in session && (session as any).user?.role === "admin") {
     redirect("/admin");
   }
 
