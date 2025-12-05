@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { getServerSession } from "next-auth";
+import { getServerSession } from "next-auth/next";
 import { LogOut, Menu, QrCode, Settings } from "lucide-react";
 import { ReactNode } from "react";
 
